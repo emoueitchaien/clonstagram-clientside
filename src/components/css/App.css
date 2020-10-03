@@ -1,0 +1,28 @@
+li a{
+    color : black !important;
+    height: 54px;
+    margin-top: -1px !important;
+    padding-left: 6.5px !important;
+}
+
+.center{
+    text-align: center;
+    /*color: red;*/ 
+}
+
+.nav-wrapper{
+    padding-left: 210px;
+    padding-right:207px;
+}
+
+.navbar{
+    padding-top: 1px;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    box-shadow: none;
+    height: 54px;
+}
+
+.brand-logo{
+    height: 20px;
+}
+
