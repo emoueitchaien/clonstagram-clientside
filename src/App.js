@@ -7,13 +7,12 @@ import NavBar from './components/screens/NavBar'
 import Home from './components/screens/Home'
 import Login from './components/screens/Login'
 import SignUp from './components/screens/SignUp'
-import Test from './components/screens/Test'
 import Profile from './components/screens/Profile'
 import CreatePost from './components/screens/CreatePost'
 import { useState } from "react"
 
 function App() {
-    const [isSigned, setSigned] = useState(true);
+    const [isSigned, setSigned] = useState(false);
   return isSigned ? (
     <BrowserRouter>
         <NavBar />
@@ -38,8 +37,14 @@ function App() {
         <Route exact path='/'>
             <Login isSigned={isSigned} setSigned={setSigned} />
         </Route>
+        <Route exact path='/login'>
+            <Login isSigned={isSigned} setSigned={setSigned} />
+        </Route>
         <Route path='/signup'>
             <SignUp/>
+        </Route>
+        <Route path='/home'>
+            <Home />
         </Route>
     </BrowserRouter>
   );

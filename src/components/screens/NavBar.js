@@ -21,7 +21,7 @@ const NavBar = () =>{
                <ul id="nav-mobile" className="right">
                     <li>
                         <Link to="/">
-                            <svg aria-label="Home" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                            <svg aria-label="Home" className="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
                                 <path d={homeOn}>
                                 </path>
                             </svg>
@@ -29,7 +29,7 @@ const NavBar = () =>{
                     </li>
                     <li>
                         <Link to="/login">
-                            <svg aria-label="Direct" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                            <svg aria-label="Direct" className="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
                                 <path d={inboxOff}>
                                 </path>
                             </svg>
@@ -37,7 +37,7 @@ const NavBar = () =>{
                     </li>
                     <li>
                         <Link to="/signup">
-                            <svg aria-label="Explore" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                            <svg aria-label="Explore" className="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
                                 <path d={exploreOff}>
                                 </path>
                             </svg>

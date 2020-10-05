@@ -1,14 +1,39 @@
-import React from 'react'
+import React,{useState} from 'react'
 import logo from '../photos/insss.png'
 import photo from '../photos/sigup.png'
 import photo2 from '../photos/photo2.png'
 import iosapp from '../photos/iosapp.png'
 import andapp from '../photos/andapp.png'
 import fbicon from '../photos/fbicon.png'
-import {Link} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 import '../css/login.css'
+import axios from 'axios'
+const Login = props  => {
+    const history = useHistory() 
+    const PostData =() =>{
+        const newdata = {
+            email,
+            pass
+        }
+        axios.post("http://localhost:5000/signin",newdata)
+            .then(data=>{
+                if(data.error){
+                    alert(data.error)
+                }
+                else{
+                    //history.push("/home")
+                    props.setSigned(!props.isSigned)
+                    //console.log(props.isSigned)
+                }
+            })
+            .catch(err=>{
+                console.log(err)
+            })
+    }
+    const [email,setEmail] = useState("")
+    const [pass,setPass] = useState("")
+    const [username,setUsername] = useState("")
 
-const Login = ()  => {
     return(
         <div className='mainbody'>
             <div className='signupphoto1'>
@@ -18,9 +43,11 @@ const Login = ()  => {
             <div>
                 <div style={{height:'382px'}} className='signin'>
                     <img className='logo' src = {logo}/>     
-                    <input className="browser-default inputfield" type='text' placeholder="Phone number, username, or email" />
-                    <input className="browser-default inputfield" type='password' placeholder="Password"/>
-                    <button class="browser-default bttn" disabled='true'>
+                    <input className="browser-default inputfield" type='text' placeholder="Phone number, username, or email" 
+                        value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    <input className="browser-default inputfield" type='password' placeholder="Password"
+                        value={pass} onChange={(e)=>setPass(e.target.value)}/>
+                    <button className="browser-default bttn" onClick={PostData}>
                         Log In
                     </button>
                     <br/>
