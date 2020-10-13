@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import "../css/signup.css";
 import axios from "axios";
 
-// using axios
+// using axios instead of fetch
 //  const data = {
 //      email,
 //      name,
