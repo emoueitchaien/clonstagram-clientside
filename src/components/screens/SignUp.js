@@ -3,27 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import "../css/signup.css";
 import axios from "axios";
 
-// using axios instead of fetch
-//  const data = {
-//      email,
-//      name,
-//      username,
-//      pass
-//  };
-
-//  axios
-//      .post("http://localhost:5000/signup",data)
-//      .then(res=>{
-//          if(res.error){
-//              alert(res.error)
-//          }
-//          else{
-//              alert(res.message)
-//              history.push('/signup')
-//          }
-//      })
-//      .catch(err=>console.log(err));
-
 const SignUp = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
@@ -32,31 +11,49 @@ const SignUp = () => {
   const [pass, setPass] = useState("");
 
   const PostData = () => {
-    fetch("http://localhost:5000/signup", {
-      method: "post",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        pass,
-        email,
-        username,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.error) {
-          alert(data.error);
-        } else {
-          // alert(data.message)
-          console.log(data);
-          history.push("/");
-        }
+    //USNIG FETCH
+    // fetch("http://localhost:5000/signup", {
+    //   method: "post",
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     pass,
+    //     email,
+    //     username,
+    //   }),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     if (data.error) {
+    //       alert(data.error);
+    //     } else {
+    //       // alert(data.message)
+    //       console.log(data);
+    //       history.push("/");
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+
+    // using axios instead of fetch
+
+    const data = {
+      email,
+      name,
+      username,
+      pass,
+    };
+
+    axios
+      .post("http://localhost:5000/signup", data)
+      .then((resp) => {
+        alert(resp.data.message);
+        history.push("/");
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => alert(err.response.data.error));
   };
 
   return (
