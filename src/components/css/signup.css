@@ -27,7 +27,7 @@ h2{
     border-bottom: 1px solid rgb(8, 93, 252) !important;
 }
 
-.input-field input[type=text, type=password]{
+.input-field input[type=text] input[type=password]{
     margin-bottom: 10px;
     max-width: 300px;
 }
