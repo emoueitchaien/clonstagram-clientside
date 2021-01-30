@@ -66,21 +66,21 @@ const Profile = () => {
                 flexWrap:"wrap",
                 justifyContent:"space-between",
                 }}>
-                <img className="item" width="293px" height="293" src={tay1}/>
-                <img className="item" width="293px" height="293" src={tay2}/>
-                <img className="item" width="293px" height="293" src={tay3}/>
-                <img className="item" width="293px" height="293" src={tay4}/>
-                <img className="item" width="293px" height="293" src={tay5}/>
-                <img className="item" width="293px" height="293" src={tay6}/>
-                <img className="item" width="293px" height="293" src={tay7}/>
-                <img className="item" width="293px" height="293" src={tay8}/>
-                <img className="item" width="293px" height="293" src={tay9}/>
-                <img className="item" width="293px" height="293" src={tay10}/>
-                <img className="item" width="293px" height="293" src={tay11}/>
-                <img className="item" width="293px" height="293" src={tay12}/>
-                <img className="item" width="293px" height="293" src={tay13}/>
-                <img className="item" width="293px" height="293" src={tay14}/>
-                <img className="item" width="293px" height="293" src={tay15}/>
+                <img alt="tay1" className="item" width="293px" height="293" src={tay1}/>
+                <img alt="tay2" className="item" width="293px" height="293" src={tay2}/>
+                <img alt="tay3" className="item" width="293px" height="293" src={tay3}/>
+                <img alt="tay4" className="item" width="293px" height="293" src={tay4}/>
+                <img alt="tay5" className="item" width="293px" height="293" src={tay5}/>
+                <img alt="tay6" className="item" width="293px" height="293" src={tay6}/>
+                <img alt="tay7" className="item" width="293px" height="293" src={tay7}/>
+                <img alt="tay8" className="item" width="293px" height="293" src={tay8}/>
+                <img alt="tay9" className="item" width="293px" height="293" src={tay9}/>
+                <img alt="tay10" className="item" width="293px" height="293" src={tay10}/>
+                <img alt="tay11" className="item" width="293px" height="293" src={tay11}/>
+                <img alt="tay12" className="item" width="293px" height="293" src={tay12}/>
+                <img alt="tay13" className="item" width="293px" height="293" src={tay13}/>
+                <img alt="tay14" className="item" width="293px" height="293" src={tay14}/>
+                <img alt="tay15" className="item" width="293px" height="293" src={tay15}/>
             </div>
        </div>
     )
