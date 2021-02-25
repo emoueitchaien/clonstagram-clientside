@@ -7,10 +7,10 @@ import andapp from "../photos/andapp.png";
 import fbicon from "../photos/fbicon.png";
 import { Link, useHistory } from "react-router-dom";
 import "../css/login.css";
-import axios from "axios";
+// import axios from "axios";
 
 const Login = (props) => {
-  const history = useHistory();
+  // const history = useHistory();
 
   const PostData = () => {
     // const newdata = {
@@ -49,13 +49,15 @@ const Login = (props) => {
         if (data.error) {
           alert(data.error);
         } else {
+          localStorage.setItem("jwt",data.token)
+          localStorage.setItem("user",JSON.stringify(data.user))
           props.setSigned(!props.isSigned);
         }
       });
   };
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
-  const [username, setUsername] = useState("");
+  // const [username, setUsername] = useState("");
 
   return (
     <div className="mainbody">

@@ -10,7 +10,7 @@ const Home = ()  => {
             <div className="card home-card">
                 <div style={{height:"60px", border:"1px solid #efefef", padding:"16px"}}><h6 style={{margin:"0px", fontSize:"14px", fontWeight:"bold"}}>routineofnepalbanda</h6></div>
                 <div className="card-image">
-                    <img src = {routine}/>
+                    <img alt="hello" src = {routine}/>
                 </div>
                 <div className="card-content">
                     <p><b>routineofnepalbanda</b> We have reached the milestone of 2 Lakhs+ members in our Viber community.</p>
@@ -22,7 +22,7 @@ const Home = ()  => {
             <div className="card home-card">
                 <div style={{height:"60px", border:"1px solid #efefef", padding:"16px"}}><h6 style={{margin:"0px", fontSize:"14px", fontWeight:"bold"}}>routineofnepalbanda</h6></div>
                 <div className="card-image">
-                    <img src = {routine2}/>
+                    <img alt="hello" src = {routine2}/>
                 </div>
                 <div className="card-content">
                     <p><b>routineofnepalbanda</b> We have reached the milestone of 2 Lakhs+ members in our Viber community.</p>
@@ -34,7 +34,7 @@ const Home = ()  => {
              <div className="card home-card">
                 <div style={{height:"60px", border:"1px solid #efefef", padding:"16px"}}><h6 style={{margin:"0px", fontSize:"14px", fontWeight:"bold"}}>routineofnepalbanda</h6></div>
                 <div className="card-image">
-                    <img src = {routine3}/>
+                    <img alt="hello" src = {routine3}/>
                 </div>
                 <div className="card-content">
                     <p><b>routineofnepalbanda</b> We have reached the milestone of 2 Lakhs+ members in our Viber community.</p>
