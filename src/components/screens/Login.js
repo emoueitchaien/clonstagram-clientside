@@ -34,7 +34,7 @@ const Login = (props) => {
     //     console.log(err);
     //   });
 
-    fetch("https://clonstagram.herokuapp.com//signin", {
+    fetch("https://clonstagram.herokuapp.com/signin", {
       method: "post",
       headers: {
         "content-type": "application/json",
