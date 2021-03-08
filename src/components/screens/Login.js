@@ -71,7 +71,7 @@ const Login = (props) => {
           <input
             className="browser-default inputfield"
             type="text"
-            placeholder="Phone number, username, or email"
+            placeholder="Email"   //Phone number, username, or email
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
