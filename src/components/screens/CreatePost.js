@@ -12,7 +12,7 @@ const CreatePost = () => {
     useEffect(()=>{
         if(url)
         {
-            fetch("http://localhost:5000/createpost", {
+            fetch("https://clonstagram.herokuapp.com//createpost", {  //http://localhost:5000/createpost
         method: "post",
         headers: {
             "content-type": "application/json",

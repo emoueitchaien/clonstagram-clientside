@@ -48,7 +48,7 @@ const SignUp = () => {
     };
 
     axios
-      .post("http://localhost:5000/signup", data)
+      .post("https://clonstagram.herokuapp.com//signup", data)
       .then((resp) => {
         alert(resp.data.message);
         history.push("/");
