@@ -77,7 +77,7 @@ const SignUp = () => {
         <input
           className="input-field"
           type="text"
-          placeholder="Userame"
+          placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
