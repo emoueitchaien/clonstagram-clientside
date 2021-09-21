@@ -41,7 +41,7 @@ const Profile = () => {
                 <div style={{
                     marginRight:"17.75%", 
                     }}>
-                    <h4 style={{marginTop:"5px", marginBottom:"13px", fontSize:"28px"}}>taylorswift</h4>
+                    <h4 style={{marginTop:"5px", marginBottom:"13px", fontSize:"28px"}}>taylorswift0</h4>
                     <div style={{
                         display:"flex",
                         justifyContent:"space-between",

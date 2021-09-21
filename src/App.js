@@ -43,15 +43,12 @@ function App() {
         <Route path='/signup'>
             <SignUp/>
         </Route>
-        <Route path='/home'>
-            <Home />
-        </Route>
     </BrowserRouter>
   );
 }
-
-/*      <Route path="/login"> 
-        <Login />
-    </Route>
+        /*
+        <Route path="/login"> 
+            <Login />
+        </Route>
         */
 export default App;
